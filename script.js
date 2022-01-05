@@ -181,9 +181,10 @@ formulaire.addEventListener('submit', function eVent(e) {
   if (validation_ok == true) {
 
 
-    parag.textContent = `this book ${title.value},is a  ${type.value}
+    parag.textContent  = `this book ${title.value},is a  ${type.value}
           in ${language.value},written by ${author.value}
-        published in ${date.value} its price is ${price.value} Dhs.`;
+        published in ${date.value} its price is ${price.value} Dhs
+        he's email ${email.value}.`;
 
 
     //sort book Names
@@ -204,7 +205,7 @@ formulaire.addEventListener('submit', function eVent(e) {
     ligne.insertCell(4).innerHTML = language.options[language.selectedIndex].value;
     ligne.insertCell(5).innerHTML = type.value;
     ligne.insertCell(6).innerHTML = email.value;
-    ligne.insertCell(6).innerHTML = '<button onclick="btnEdit(this)"class="btn">Editer</button>' + '<button onclick="btnSupr(this)"  class="btn"  id="btn2">Supprimer</button>';
+    ligne.insertCell(7).innerHTML = '<button onclick="btnEdit(this)"class="btn">Editer</button>' + '<button onclick="btnSupr(this)"  class="btn"  id="btn2">Supprimer</button>';
     
     
     
