@@ -50,8 +50,8 @@ label{
     
 }
 #table{
-    margin-left: 9.5em;
-    margin-top: -40px;
+    margin-left: 5em;
+    margin-top: 3em;
 }
 
 button{
@@ -83,4 +83,8 @@ select{
 }
 #changerBtn{
     margin-left: 9em;
+}
+#h1{
+   color: #887346;
+   font-size: medium;
 }
