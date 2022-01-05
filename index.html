@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blq Bibliothèque</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&family=Risque&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+        
+
+  
+</head>
+<body>
+    <h1>BLQ BIBLIOTHÉQUE</h1>
+	
+    <form id="form">
+        <div>
+            <h2><label for="title">title</label></h2> 
+            <p class="error"></p>
+            <input id="title" value="Book title" name="title" type="text" >
+        </div><br>
+
+        <div>
+            <h2> <label for="author">author</label></h2>
+            <p class="error"></p>
+            <input id="author" value="author" name="author" type="text" >
+        </div> <br>
+
+        <div>
+            <h2><label for="price">Price</label></h2>
+            <p class="error"></p>
+            <input id="price" value="40" name="price" type="text" >
+        </div><br>
+
+        <div>
+            <h2><label for="pub-date">publication date </label></h2>
+            <p class="error"></p><br>
+            <input id="pub"  name="date de publication" type="date" >
+        </div> <br> 
+
+        <div>
+            <h2><label for="language">Language</label></h2>
+            <p class="error"></p><br>
+            <select  id="lang" name="language" >
+            <option disabled hidden selected value >select a language</option>
+            <option value="Arabic" selected>Arabic</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Espagnol">Espagnol</option>
+            </select>
+        </div><br>
+
+        <div>
+            <h2><label for="type">Type</label></h2>
+            <p class="error"></p><br>
+            <div id="type">
+            <input type="radio" id="Roman" name="Selectionner" value="Roman" checked>
+            <label for="Roman">Roman</label><br>
+            <input type="radio" id="Essai" name="Selectionner" value="Essai" >
+            <label for="Essai">Essai</label><br>
+            <input type="radio" id="Bande-Dessinée" name="Selectionner" value="BD">
+            <label for="Bande-Dessinée">BD</label>
+            </div>
+        </div><br>
+
+        <h2><label for="email">author email</label></h2>
+        <p class="error"></p><br>
+        <input id="email" value="(ex:a@a.gmail.com)" name="author email" type="email" >
+    </div> 
+    <br><br>
+    
+
+        <button type="submit" id="button"> Ajouter</button>
+        <button type="button" onclick="btnChanger()" value="Changer" id="changerBtn" >edit</button> <br><br>
+        
+    </form>
+    
+    
+
+        <table id="table">
+           
+            <thead class="test">
+                 <h1 id="h1"></h1>
+                <tr>
+                    <th>title</th>
+                    <th>author</th>
+                    <th>price</th>
+                    <th>publication date</th>
+                    <th>Language</th>
+                    <th>Type</th>
+                    <th>options</th>
+                </tr>
+            </thead>
+
+        </table>
+        <br>
+        <button  onclick="myApp.printTable()" id="print">print this </button>
+   
+
+  <script src="script.js">
+   </script>
+
+
+
+    </body>
+    </html>
+

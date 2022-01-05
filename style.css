@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: url(bibliothèque2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+table, th, td {
+    border: 1px solid #453C28;
+    border-collapse: collapse;
+    width: 50em;
+    background-color: rgba(196, 196, 196, 0.51) ;
+    color: white;
+    font-family:roboto mono;
+    font-weight: lighter;
+  }
+ input{
+     background-color:rgba(196, 196, 196, 0.51);
+     color: white;
+     height: 31px;
+     width: 45%;
+     font-size: 17px;
+     font-family: roboto mono;
+     border-radius: 9px;
+ }
+h1{
+    color: #856A16;
+    font-family: risque;
+    text-align: center;
+    padding-top: 0.5em;
+    font-size: 70px;
+}
+
+#form{
+    margin-top: 2em;
+    margin-left: 33em;
+}
+#type{
+    margin-right: 56em;
+}
+#lang{
+width:40% ;
+height: 29px;
+}
+label{
+    color: white;
+    font-size: 18px;
+    
+}
+#table{
+    margin-left: 9.5em;
+    margin-top: -40px;
+}
+
+button{
+    margin-left:52em;
+    margin-top: 1em;
+    width: 9%;
+    height: 3em;
+    background-color: #887346;
+    color: white;
+    border-radius: 7px;
+    font-family: monospace;
+}
+button:hover{
+    color: rgb(240, 227, 155);
+    background-color: #453C28;
+}
+
+select{
+    background-color:rgba(196, 196, 196, 0.51);
+    color: white;
+    height: 27px;
+    width: 30%;
+    font-size: 17px;
+    font-family: roboto mono;
+    border-radius: 9px;
+}
+#button{
+    margin-left: 9em;
+}
+#changerBtn{
+    margin-left: 9em;
+}
