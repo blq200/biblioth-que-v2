@@ -1,9 +1,10 @@
- var title = document.getElementById('title');
+var title = document.getElementById('title');
 var author = document.getElementById('author');
 var price = document.getElementById('price');
 var date = document.getElementById('pub');
 var language = document.getElementById('lang');
 var types = document.querySelectorAll('input[name="Selectionner"]');
+var email = document.getElementById('email');
 var formulaire = document.getElementById('form');
 var errors = document.getElementsByClassName("error");
 
@@ -29,6 +30,7 @@ const markup = ` ${storage.map((s)=>{
                       <td>${s.language}</td>
                       <td>${s.date}</td>
                       <td>${s.types}</td>
+                      <td>${s.email}</td>
                       <td><button onclick="btnEdit(this)"class="btn">Editer</button><button onclick="btnSupr(this)"  class="btn"  id="btn2">Supprimer</button> </td>
                       
                       
@@ -201,6 +203,7 @@ formulaire.addEventListener('submit', function eVent(e) {
     ligne.insertCell(3).innerHTML = date.value;
     ligne.insertCell(4).innerHTML = language.options[language.selectedIndex].value;
     ligne.insertCell(5).innerHTML = type.value;
+    ligne.insertCell(6).innerHTML = email.value;
     ligne.insertCell(6).innerHTML = '<button onclick="btnEdit(this)"class="btn">Editer</button>' + '<button onclick="btnSupr(this)"  class="btn"  id="btn2">Supprimer</button>';
     
     
@@ -258,6 +261,7 @@ function btnEdit(td) {
   price.value = selectedRow.cells[2].innerHTML;
   date.value = selectedRow.cells[3].innerHTML;
   language.value = selectedRow.cells[4].innerHTML;
+  email.value = selectedRow.cells[5].innerHTML;
 
   for (var i = 0; i < 3; i++) {
     if (types[i].value == selectedRow.cells[5].innerHTML) {
@@ -281,6 +285,7 @@ function btnChanger() {
   selectedRow.cells[2].innerHTML = price.value;
   selectedRow.cells[3].innerHTML = date.value;
   selectedRow.cells[4].innerHTML = language.options[language.selectedIndex].value;
+  selectedRow.cells[5].innerHTML = email.value;
 
   for (var type of types) {
     if (type.checked) {
